@@ -6,6 +6,7 @@ services:
     volumes:
       - /var/lib/postgresql/data/
     env_file:
+      # А почему так удобнее?
       - ./.env.example
   web:
     build: ../api_yamdb
